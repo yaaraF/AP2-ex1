@@ -10,7 +10,7 @@ namespace ex1
     public delegate double func(double val);
     public class FunctionsContainer
     {  
-        // dictionary that contains all the functions
+        // dictionary that contains all the functions.
        private Dictionary<string, func> funcs = new Dictionary<string, func>();
         /**
          * Indexer 
