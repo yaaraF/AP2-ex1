@@ -19,6 +19,7 @@ namespace ex1
         {
             get
             {
+                // if the dictonary don't include the key, create it.
                 if (!funcs.ContainsKey(funcName)){
                     funcs[funcName] = val => val;
                 }
@@ -34,6 +35,7 @@ namespace ex1
          **/
         public List<string> getAllMissions()
         {
+            // return all the messions in the container
             return new List<string>(this.funcs.Keys);
         }
     }

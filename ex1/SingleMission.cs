@@ -37,8 +37,10 @@ namespace ex1
             double calc = value;
             if (singleM != null)
             {
+                //if singleM is func
                calc = singleM(value);
             }
+            //invoke everyone
             OnCalculate?.Invoke(this, calc);
             return calc;
         }

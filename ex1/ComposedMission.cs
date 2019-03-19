@@ -43,10 +43,12 @@ namespace ex1
          **/
         public double Calculate(double value)
         {
+            //calculate all the missions
             for(int i = 0; i < this.myFuncs.Count; i++)
             {
                 value = this.myFuncs[i](value);
             }
+            // invoke everyone
             OnCalculate?.Invoke(this, value);
             return value;
         }
